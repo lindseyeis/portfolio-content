@@ -2,29 +2,34 @@
 <html lang="en">
 <!-- All of the meta data for the page belongs in the header tag -->
 <head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/styles.css">
+	<title>Lindsey Eisenshtadt's Resume</title>
 </head>
 
-<body>
+<body class="resume_page">
 	<header>
+		<a class="skip" href="#main">Skip to main content</a>
 		<nav>
 			<ul>
 				<li><a href="index.html">Home</a></li>
 				<li><a href="about.html">About Me</a></li>
                 <li><a href="work.html">Work</a></li>
-                <li><a href="resume.html">Resume</a></li>
+                <li><a href="resume.html" class="active">Resume</a></li>
 			</ul>
 		</nav>
 	</header>
 
-	<main>
-		<h1>Resume</h1>
-        <a href="https://www.linkedin.com/in/lindsey-eisenshtadt-690262144/"><img src="images/linkedin-resume.png" alt="LinkedIn logo"/>Find Me On LinkedIn</a>
-		<p>
+	<main id="main">
+		<h1 class="header">Resume</h1>
+		<img src="images/linkedin-resume.png" alt="LinkedIn logo">
+        <a class="linkedin" href="https://www.linkedin.com/in/lindsey-eisenshtadt-690262144/" target="_blank">Find Me On LinkedIn</a>
+		<p class="p1">
 			Here is my resume detailing my experience and skills.
         </p>
         <!-- I would like my resume to be embedded onto the page but for now I just used an external link -->
-        <a href="https://drive.google.com/file/d/1VYvz0sCtsJ4FqDJ8c2brJkPcSYQ2pFc9/view?usp=sharing" target="_blank">Link To Resume</a>
-        <p>
+        <a class="resume_link" href="https://drive.google.com/file/d/1VYvz0sCtsJ4FqDJ8c2brJkPcSYQ2pFc9/view?usp=sharing" target="_blank">Link To Resume</a>
+        <p class="p2">
             Please feel free to contact me at lindsee@umich.edu.
         </p>
 	</main>
