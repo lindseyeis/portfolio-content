@@ -10,7 +10,7 @@ ul .active{
 }
 
 li {
-    margin: 0px 10px 0px 75px;
+    margin: 0px 10px 0px 5px;
     font-size: 15px;
 }
 
@@ -198,7 +198,7 @@ aside {
     width: 300px;
     border: 3px solid black;
     padding: 10px;
-    margin: 30px 100px;
+    margin: 30px 73px;
     border-radius: 10px;
     float: left;
 }
@@ -211,7 +211,7 @@ aside {
     width: 300px;
     border: 3px solid black;
     padding: 10px;
-    margin: 30px 100px 5% 100px;
+    margin: 30px 100px 5% 75px;
     border-radius: 10px;
     float: left;
 }
