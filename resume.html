@@ -3,8 +3,21 @@
 <!-- All of the meta data for the page belongs in the header tag -->
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Domine&display=swap" rel="stylesheet">
 	<title>Lindsey Eisenshtadt's Resume</title>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-6DP6H92VXV"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-6DP6H92VXV');
+	</script>
 </head>
 
 <body class="resume_page">
@@ -22,20 +35,66 @@
 
 	<main id="main">
 		<h1 class="header">Resume</h1>
+		<p class="p1">
+			Here is my resume detailing my experience and skills. You can view my internship work and course projects by going to the 'Work' tab on this website. 
+			I have gained a variety of skills during my time at The University of Michigan School of Information. 
+			These skills include technical, design and research skills. 
+			For technical skills, I am educated in Javascript, React, HTML, CSS, Python, Google Ads, Google Analytics and Tableau. 
+			For design skills, I know Photoshop, Adobe Illustrator, Adobe XD, Miro and Mural. 
+			Finally, my research skills include Usability Testing, Heuristic Evaluation, User Interviews, Surveys, Comparative Evaluation and Interaction Maps.
+        </p>
+		<p class="p2">
+			I completed my Bachelors of Arts in Marketing from Michigan State University in May 2020. 
+			From there, I decided to pursue a Masters of Information with a focus in User Experience Design from The University of Michigan. 
+			My anticipated graduation date is May 2023. During my time at Michigan State University, I was involved in the Sigma Delta Tau sorority where I became the Housing Manager on the Executive Board. 
+			As the Housing Manager, I consulted with chapter president and advisor through daily communication to resolve complaints and conflicts. 
+			I also oversaw daily operations including managing onsite facility concerns and overseeing safety compliance. 
+			Finally, I facilitated housing assignments for 48 members by considering event participation resulting in a full house of content members.
+		</p>
+		<h2>Experience</h2>
+		<h3>User Experience Designer and Researcher at The Carr Center, Detroit, MI ~ May 2022 - August 2022</h3>
+		<ul>
+			<li class="resume-list">Evaluated the usability of the original iteration of The Carr Virtual Center website through comprehensive review using heuristic evaluation and comparative analysis to identify pain points requiring improvement</li>
+			<li class="resume-list">Conducted user research and staff interviews to understand needs and explored various platforms which led to Artsteps and Spatial.io being incorporated into the website</li>
+			<li class="resume-list">Designed and implemented a new iteration of The Carr Virtual Center on Wix which improved the navigation, user friendliness, and provide an enjoyable experience for users worldwide</li>
+			<li class="resume-list">Trained Carr Center Staff to implement backend website changes on Wix through facilitating a virtual training and creating a video library with tutorials for ongoing support to support sustainable website administration</li>
+		</ul>
+		<h3>Engagement Summer Team Member, United Wholesale Mortgage, Pontiac, MI ~ May 2019 - August 2019</h3>
+		<ul>
+			<li class="resume-list">Recruited over 60 vendors from Facebook for the first ever Farmers Market event and managed communication with them by relaying details leading up to the function, producing a successful and reoccurring event</li>
+			<li class="resume-list">Increased employee engagement with internal UPerks program through identifying and forming partnerships with local businesses to create exclusive discount offers on website </li>
+			<li class="resume-list">Led a group of 17 Summer Team Members in our Gleaners Charity Week project that generated over 10,000 cans donated to the organization that meets community nutrition needs</li>
+		</ul>
+		<h3>Sales Associate, Franklin Village Boutique, Franklin, MI ~ June 2015 - August 2018</h3>
+		<ul>
+			<li class="resume-list">Promoted customer experience through providing individualized recommendations based on customers' needs and delivering courteous services resulting in sales around $1,500 daily and returned patronage</li>
+		</ul>
 		<img src="images/linkedin-resume.png" alt="LinkedIn logo">
         <a class="linkedin" href="https://www.linkedin.com/in/lindsey-eisenshtadt-690262144/" target="_blank">Find Me On LinkedIn</a>
-		<p class="p1">
-			Here is my resume detailing my experience and skills.
-        </p>
-        <!-- I would like my resume to be embedded onto the page but for now I just used an external link -->
-        <a class="resume_link" href="https://drive.google.com/file/d/1VYvz0sCtsJ4FqDJ8c2brJkPcSYQ2pFc9/view?usp=sharing" target="_blank">Link To Resume</a>
-        <p class="p2">
-            Please feel free to contact me at lindsee@umich.edu.
-        </p>
+        <aside>
+			<p class="p3">
+				Please feel free to contact me at lindsee@umich.edu or fill out the form below and I will get back to you as soon as I can. Thank you!
+			</p>
+			<form
+			action="https://formspree.io/f/mpznokdj"
+			method="POST"
+			>
+			<label>
+				Your email:
+				<input type="email" name="email">
+			</label>
+			<label>
+				Your message:
+				<textarea name="message" rows="4" cols="50"></textarea>
+			</label>
+			<!-- your other form fields go here -->
+			<button type="submit">Submit</button>
+			</form>
+		</aside>
 	</main>
 
-	<footer>
-
+	<footer id="footer">
+		<p>Lindsey Eisenshtadt - <a href="mailto:lindsee@umich.edu">lindsee@umich.edu</a></p>
 	</footer>
 </body>
 </html>

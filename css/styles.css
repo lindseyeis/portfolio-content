@@ -10,9 +10,8 @@ ul .active{
 }
 
 li {
-    display: inline;
-    margin: 20px;
-    font-size: 18px;
+    margin: 0px 10px 0px 75px;
+    font-size: 15px;
 }
 
 li a {
@@ -29,98 +28,110 @@ li a:hover {
     color: black;
 }
 
-h1 {
+.work_page h1 {
     text-align: center;
     font-size: 2.5em;
-    margin: 30px;
+    margin: 50px 30px 30px 30px;
+    min-height: 50px;
+}
+
+.home_page h1, .about_page h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin: 50px 30px 30px 30px;
+    min-height: 50px;
+}
+
+.resume_page h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin: 25px 30px 30px 30px;
     min-height: 50px;
 }
 
 .header {
-    padding: 60px;
+    padding: 40px;
     text-align: center;
     background: linear-gradient(to right, #fa9ac2, #765cc0);
     color: white;
     font-size: 3em;
+    animation: fadeIn 2s;
+    font-family: 'Domine', serif;
   }
 
-.home_page p {
-    text-align: left;
-    padding: 5px;
-    margin: 10% 100px;
-    font-size: 20px;
-    display: block;
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+footer {
+    background-color: #fa9ac2;
+    margin: 10px 0px 20px 0px;
+    height: 65px;
 }
 
-.home_page .p1 {
-    text-align: left;
-    padding: 5px;
-    margin-bottom: 30px;
-    margin-top: 120px;
-    font-size: 20px;
-    display: block;
+
+.work_page #footer p, .about_page #footer p, .home_page #footer p{
+    padding-top: 20px;
+    text-align: center;
 }
 
-.home_page .p2 {
-    text-align: left;
-    padding: 5px;
-    margin-top: 30px;
-    font-size: 20px;
-    display: block;
-}
-
-.about_page p {
-    margin: 10% 100px;
-}
-
-.about_page .p1 {
+.home_page p, .about_page p, .resume_page p, .work_page p {
     text-align: left;
     padding: 5px;
     margin-bottom: 30px;
+    margin-top: 15px;
     font-size: 20px;
-    display: block;
 }
 
-.about_page .p2 {
-    text-align: left;
-    padding: 5px;
-    margin-top: 30px;
-    font-size: 20px;
-    display: block;
+.resume_page {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
 }
 
-.resume_page p {
-    margin: 10% 100px;
+.resume_page header {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    align-items: center;
 }
 
-.resume_page .p1 {
-    text-align: left;
-    padding: 5px;
-    margin-bottom: 30px;
-    font-size: 20px;
-    display: block;
+.resume_page footer {
+    grid-column: 1 / -1;
+    align-items: center;
 }
 
-.resume_page .p2 {
-    text-align: left;
-    padding: 5px;
-    margin-top: 30px;
-    font-size: 20px;
-    display: block;
+.resume_page footer p {
+    text-align: center;
+}
+
+.resume_page main {
+    grid-column: 1 / -1;
+    align-items: center;
+}
+
+.resume_page h3 {
+    margin-left: 10px;
 }
 
 .resume_page .linkedin {
     text-align: left;
     padding: 5px;
-    margin: 15px 500px 25px 260px;
-    font-size: 20px;
+    font-size: 15px;
     float: left;
+    margin-bottom: 50px;
 }
 
-.resume_page .resume_link {
-    text-align: left;
+.resume_page .resume-list {
+    display: list-item;
+    list-style-type: circle;
     padding: 5px;
-    margin-top: 30px;
+    margin: 5px 0px 5px 0px;
     font-size: 20px;
 }
 
@@ -132,10 +143,11 @@ h1 {
     display: block;
 }
 
+
 #main h2 {
     text-align: center;
-    margin: 40px 40%;
-    background-color: #E8E8E8;
+    margin: 0px 35%;
+    background-image: url("../images/background-image.jpg");
 }
 
 .skip {             /*Found this and the :focus online (https://dev.to/ziizium/how-to-implement-accessibility-skip-to-content-4d8m). Not sure if I should use it.*/
@@ -149,47 +161,189 @@ h1 {
     overflow: hidden;
   }
 
-  .skip:focus {
+.skip:focus {
     height: auto;
     position: static;
     width: auto;
   }
 
-@media all and (min-width: 800px){
-    .home_page img {
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 5px;
+    margin: 0;
+    font-size: 20px;
+    box-sizing: border-box;
+  }
+
+textarea {
+    width: 200px;
+}
+
+aside {
+    width: 50%;
+    padding: 15px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    float: right;
+    font-style: italic;
+    background-color: #b69ff7;
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    align-items: center;
+  }
+
+.about_page img {
+    width: 300px;
+    border: 3px solid black;
+    padding: 10px;
+    margin: 30px 100px;
+    border-radius: 10px;
+    float: left;
+}
+
+.about_page img:hover {
+    background-color: #fa9ac2;
+}
+
+.home_page img {
+    width: 300px;
+    border: 3px solid black;
+    padding: 10px;
+    margin: 30px 100px 5% 100px;
+    border-radius: 10px;
+    float: left;
+}
+
+.home_page img:hover {
+    background-color: #fa9ac2;
+}
+
+.work_page .cvc_images {
+    height: 100px;
+    width: auto;
+    border: 3px solid black;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.work_page .cvc_images:hover {
+    background-color: #fa9ac2;
+}
+
+.work_page .collect_connect_images {
+    height: 400px;
+    width: auto;
+    border: 3px solid black;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.work_page .collect_connect_images:hover {
+    background-color: #fa9ac2;
+}
+
+.work_page .taskcheck_images {
+    height: 350px;
+    width: auto;
+    border: 3px solid black;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.work_page .taskcheck_images:hover {
+    background-color: #fa9ac2;
+}
+
+.work_page .brandmotion_image {
+    height: 350px;
+    width: auto;
+    border: 3px solid black;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.work_page .brandmotion_image:hover {
+    background-color: #fa9ac2;
+}
+
+.work_page .dog_rescue_image {
+    height: 300px;
+    width: 450px;
+    border: 3px solid black;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.work_page .dog_rescue_image:hover {
+    background-color: #fa9ac2;
+}
+
+.resume_page img {
+    width: 75px;
+    border: 3px solid black;
+    padding: 15px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    float: left;
+}
+
+.resume_page img:hover {
+    background-color: #fa9ac2;
+}
+
+
+
+/* @media all and (min-width: 800px){ */
+    /* .home_page img {
         width: 300px;
         border: 3px solid black;
         padding: 10px;
         margin: 30px 100px 5% 100px;
         border-radius: 10px;
         float: left;
-    }
+    } */
 
-    .home_page img:hover {
+    /* .home_page img:hover {
         background-color: #fa9ac2;
-    }
+    } */
 
-    .about_page img {
+    /* .about_page img {
         width: 300px;
         border: 3px solid black;
         padding: 10px;
         margin: 30px 100px;
         border-radius: 10px;
         float: left;
-    }
+    } */
 
-    .about_page img:hover {
+    /* .about_page img:hover {
         background-color: #fa9ac2;
-    }
+    } */
 
-    .work_page .gallery_grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-        grid-gap: 15px;
-    }
-
-    .work_page .cvc_images {
+    /* .work_page .cvc_images {
         height: 250px;
         width: 350px;
         border: 3px solid black;
@@ -200,9 +354,9 @@ h1 {
 
     .work_page .cvc_images:hover {
         background-color: #fa9ac2;
-    }
+    } */
 
-    .work_page .collect_connect_images {
+    /* .work_page .collect_connect_images {
         height: 400px;
         width: 200px;
         border: 3px solid black;
@@ -256,26 +410,36 @@ h1 {
     }
 
     .resume_page img {
-        width: 300px;
+        width: 75px;
         border: 3px solid black;
-        padding: 10px;
-        margin: 30px 100px 15px 200px;
-        border-radius: 10px;
+        padding: 15px;
+        margin-right: 20px;
+        margin-bottom: 20px;
         float: left;
     }
 
     .resume_page img:hover {
         background-color: #fa9ac2;
     }
-}
+} */
 
-@media screen and (prefers-reduced-motion: reduce){
-    html{
+/* @media screen and (prefers-reduced-motion: reduce){
+    html {
       scroll-behavior: auto; /* Removes scroll animation */
-    }
+    /* } */
 
-    .skip {
+    /* .header {
+        animation: none;
+    } */
+
+    /* .skip {
       -webkit-transition: none;
       transition: none;
+    }
+  } */
+
+  @media (prefers-reduced-motion) {
+    header img {
+        animation: none;
     }
   }
