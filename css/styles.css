@@ -72,6 +72,7 @@ footer {
     background-color: #fa9ac2;
     margin: 10px 0px 20px 0px;
     height: 65px;
+    bottom: 25px;
 }
 
 
@@ -195,10 +196,10 @@ aside {
   }
 
 .about_page img {
-    width: 300px;
+    width: 315px;
     border: 3px solid black;
     padding: 10px;
-    margin: 30px 60px;
+    margin: 30px 40px 30px 60px;
     border-radius: 10px;
     float: left;
 }
@@ -316,34 +317,34 @@ aside {
 
 
 
-/* @media all and (min-width: 800px){ */
-    /* .home_page img {
+@media all and (min-width: 800px){ */
+    .home_page img {
         width: 300px;
         border: 3px solid black;
         padding: 10px;
         margin: 30px 100px 5% 100px;
         border-radius: 10px;
         float: left;
-    } */
+    }
 
-    /* .home_page img:hover {
+    .home_page img:hover {
         background-color: #fa9ac2;
-    } */
+    }
 
-    /* .about_page img {
+    .about_page img {
         width: 300px;
         border: 3px solid black;
         padding: 10px;
         margin: 30px 100px;
         border-radius: 10px;
         float: left;
-    } */
+    }
 
-    /* .about_page img:hover {
+    .about_page img:hover {
         background-color: #fa9ac2;
-    } */
+    }
 
-    /* .work_page .cvc_images {
+    .work_page .cvc_images {
         height: 250px;
         width: 350px;
         border: 3px solid black;
@@ -354,9 +355,9 @@ aside {
 
     .work_page .cvc_images:hover {
         background-color: #fa9ac2;
-    } */
+    }
 
-    /* .work_page .collect_connect_images {
+    .work_page .collect_connect_images {
         height: 400px;
         width: 200px;
         border: 3px solid black;
@@ -421,7 +422,28 @@ aside {
     .resume_page img:hover {
         background-color: #fa9ac2;
     }
-} */
+
+    .home_page footer {
+        background-color: #fa9ac2;
+        margin: 100px 0px 20px 0px;
+        height: 65px;
+        bottom: 25px;
+    }
+
+    .about_page footer {
+        background-color: #fa9ac2;
+        margin: 175px 0px 20px 0px;
+        height: 65px;
+        bottom: 25px;
+    }
+
+    .work_page footer {
+        background-color: #fa9ac2;
+        margin: 50px 0px 20px 0px;
+        height: 65px;
+        bottom: 25px;
+    }
+}
 
 /* @media screen and (prefers-reduced-motion: reduce){
     html {
