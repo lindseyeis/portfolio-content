@@ -37,7 +37,7 @@ li a:hover {
     background: #f1f1f1;
   }
 
-.searchbar button {
+ .searchbar button {
     float: right;
     padding: 10px;
     background: #fa9ac2;
@@ -48,39 +48,34 @@ li a:hover {
     cursor: pointer;
   }
 
-.searchbar button:hover {
+  .searchbar button:hover {
     background: #fa9ac2;
   }
 
-.searchbar::after {
+  .searchbar::after {
     content: "";
     clear: both;
     display: table;
   }
 
-.work_page {
-    display: flex;
-    flex-direction: column;
-}
-
 .work_page h1 {
     text-align: center;
     font-size: 2.5em;
-    margin: 0px 30px 30px 30px;
+    margin: 50px 30px 30px 30px;
     min-height: 50px;
 }
 
 .home_page h1, .about_page h1 {
     text-align: center;
     font-size: 2.5em;
-    margin: 0px 30px 30px 30px;
+    margin: 20px 30px 30px 30px;
     min-height: 50px;
 }
 
 .resume_page h1 {
     text-align: center;
     font-size: 2.5em;
-    margin: 0px 30px 30px 30px;
+    margin: 25px 30px 30px 30px;
     min-height: 50px;
 }
 
@@ -110,13 +105,6 @@ footer {
     bottom: 25px;
 }
 
-.work_page #footer {
-    flex-direction: row;
-    background-color: #fa9ac2;
-    margin: 10px 0px 20px 0px;
-    height: 65px;
-    bottom: 25px;
-}
 
 .work_page #footer p {
     padding-top: 20px;
@@ -183,8 +171,9 @@ footer {
     padding: 5px;
     margin: 10px;
     font-size: 20px;
-    flex-direction: column;
+    display: block;
 }
+
 
 #main h2 {
     text-align: center;
@@ -210,6 +199,7 @@ footer {
   }
 
 .formspree {
+    display: flex;
     flex-direction: column;
     text-align: left;
     padding: 5px;
@@ -268,6 +258,7 @@ aside {
     padding: 10px;
     margin: 5px;
     border-radius: 10px;
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
@@ -283,6 +274,7 @@ aside {
     padding: 10px;
     margin: 5px;
     border-radius: 10px;
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
@@ -298,6 +290,7 @@ aside {
     padding: 10px;
     margin: 5px;
     border-radius: 10px;
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
@@ -313,6 +306,7 @@ aside {
     padding: 10px;
     margin: 5px;
     border-radius: 10px;
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
@@ -329,6 +323,7 @@ aside {
     margin: 5px;
     border-radius: 10px;
     text-align: center;
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
@@ -441,7 +436,6 @@ aside {
         background-color: #fa9ac2;
     }
 
-
     .work_page .cvc_images {
         height: 250px;
         width: 350px;
@@ -507,7 +501,6 @@ aside {
     .work_page .dog_rescue_image:hover {
         background-color: #fa9ac2;
     }
-
 
     .resume_page img {
         width: 75px;
@@ -594,12 +587,6 @@ aside {
         display: table;
       }
 
-    .home_page {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-    }
-
     .home_page img {
         width: 300px;
         border: 3px solid black;
@@ -607,7 +594,6 @@ aside {
         margin: 30px 50px 5% 50px;
         border-radius: 10px;
         float: left;
-        grid-column: 2;
     }
 
     .home_page img:hover {
@@ -634,7 +620,6 @@ aside {
         padding: 10px;
         margin: 15px 23%;
         border-radius: 10px;
-        flex-direction: column;
     }
 
     .work_page .cvc_images:hover {

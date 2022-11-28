@@ -6,7 +6,7 @@ ul {
 
 ul .active{
     color: white;
-    background-color: #5F43AD;
+    background-color: #765cc0;
 }
 
 li {
@@ -28,59 +28,24 @@ li a:hover {
     color: black;
 }
 
-.searchbar input[type=text] {
-    padding: 10px;
-    font-size: 17px;
-    border: 1px solid grey;
-    float: right;
-    width: 13%;
-    background: #f1f1f1;
-  }
-
-.searchbar button {
-    float: right;
-    padding: 10px;
-    background: #fa9ac2;
-    color: white;
-    font-size: 17px;
-    border: 1px solid grey;
-    border-left: none;
-    cursor: pointer;
-  }
-
-.searchbar button:hover {
-    background: #fa9ac2;
-  }
-
-.searchbar::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-
-.work_page {
-    display: flex;
-    flex-direction: column;
-}
-
 .work_page h1 {
     text-align: center;
     font-size: 2.5em;
-    margin: 0px 30px 30px 30px;
+    margin: 50px 30px 30px 30px;
     min-height: 50px;
 }
 
 .home_page h1, .about_page h1 {
     text-align: center;
     font-size: 2.5em;
-    margin: 0px 30px 30px 30px;
+    margin: 50px 30px 30px 30px;
     min-height: 50px;
 }
 
 .resume_page h1 {
     text-align: center;
     font-size: 2.5em;
-    margin: 0px 30px 30px 30px;
+    margin: 25px 30px 30px 30px;
     min-height: 50px;
 }
 
@@ -110,15 +75,8 @@ footer {
     bottom: 25px;
 }
 
-.work_page #footer {
-    flex-direction: row;
-    background-color: #fa9ac2;
-    margin: 10px 0px 20px 0px;
-    height: 65px;
-    bottom: 25px;
-}
 
-.work_page #footer p {
+.work_page #footer p, .about_page #footer p, .home_page #footer p{
     padding-top: 20px;
     text-align: center;
 }
@@ -126,34 +84,34 @@ footer {
 .home_page p, .about_page p, .resume_page p, .work_page p {
     text-align: left;
     padding: 5px;
-    margin: 30px 30px 30px 30px;
+    margin-bottom: 30px;
+    margin-top: 20px;
     font-size: 20px;
 }
 
-.resume_page, .about_page,  .home_page{
+.resume_page {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     align-items: center;
 }
 
-.resume_page header, .about_page header, .home_page header {
+.resume_page header {
     grid-column: 1 / -1;
     grid-row: 1 / -1;
     align-items: center;
 }
 
-.resume_page #footer, .about_page #footer, .home_page #footer {
+.resume_page footer {
     grid-column: 1 / -1;
     align-items: center;
 }
 
-.resume_page #footer p, .about_page #footer p, .home_page #footer p {
+.resume_page footer p {
     text-align: center;
-    margin: 15px;
 }
 
-.resume_page main, .about_page main, .home_page main {
+.resume_page main {
     grid-column: 1 / -1;
     align-items: center;
 }
@@ -183,8 +141,9 @@ footer {
     padding: 5px;
     margin: 10px;
     font-size: 20px;
-    flex-direction: column;
+    display: block;
 }
+
 
 #main h2 {
     text-align: center;
@@ -209,7 +168,8 @@ footer {
     width: auto;
   }
 
-.formspree {
+form {
+    display: flex;
     flex-direction: column;
     text-align: left;
     padding: 5px;
@@ -268,6 +228,7 @@ aside {
     padding: 10px;
     margin: 5px;
     border-radius: 10px;
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
@@ -283,6 +244,7 @@ aside {
     padding: 10px;
     margin: 5px;
     border-radius: 10px;
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
@@ -298,6 +260,7 @@ aside {
     padding: 10px;
     margin: 5px;
     border-radius: 10px;
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
@@ -313,6 +276,7 @@ aside {
     padding: 10px;
     margin: 5px;
     border-radius: 10px;
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
@@ -329,6 +293,7 @@ aside {
     margin: 5px;
     border-radius: 10px;
     text-align: center;
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
@@ -352,262 +317,14 @@ aside {
 
 
 
-@media all and (min-width: 800px){
-
-    ul {
-        list-style-type: none;
-        margin: 25px;
-        padding: 5px;
-    }
-
-    ul .active{
-        color: white;
-        background-color: #765cc0;
-    }
-
-    li {
-        margin: 0px 10px 0px 5px;
-        font-size: 15px;
-    }
-
-    li a {
-        color: black;
-        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        float: left;
-        padding: 8px;
-        background-color: #E8E8E8;
-        border-right: 3px solid white;
-    }
-
-    li a:hover {
-        background-color: #b69ff7;
-        color: black;
-    }
-
-    .searchbar input[type=text] {
-        padding: 10px;
-        font-size: 17px;
-        border: 1px solid grey;
-        float: right;
-        width: 15%;
-        background: #f1f1f1;
-      }
-
-     .searchbar button {
-        float: right;
-        width: 5%;
-        padding: 10px;
-        background: #fa9ac2;
-        color: white;
-        font-size: 17px;
-        border: 1px solid grey;
-        border-left: none;
-        cursor: pointer;
-      }
-
-      .searchbar button:hover {
-        background: #fa9ac2;
-      }
-
-      .searchbar::after {
-        content: "";
-        clear: both;
-        display: table;
-      }
-
+@media all and (min-width: 800px){ */
     .home_page img {
         width: 300px;
         border: 3px solid black;
         padding: 10px;
-        margin: 30px 45px 20px 45px;
+        margin: 30px 100px 5% 100px;
         border-radius: 10px;
         float: left;
-    }
-
-    .home_page img:hover {
-        background-color: #fa9ac2;
-    }
-
-    .about_page img {
-        width: 300px;
-        border: 3px solid black;
-        padding: 10px;
-        margin: 20px 50px;
-        border-radius: 10px;
-        float: left;
-    }
-
-    .about_page img:hover {
-        background-color: #fa9ac2;
-    }
-
-
-    .work_page .cvc_images {
-        height: 250px;
-        width: 350px;
-        border: 3px solid black;
-        padding: 10px;
-        margin: 15px 23%;
-        border-radius: 10px;
-    }
-
-    .work_page .cvc_images:hover {
-        background-color: #fa9ac2;
-    }
-
-    .work_page .collect_connect_images {
-        height: 400px;
-        width: 200px;
-        border: 3px solid black;
-        padding: 10px;
-        margin: 15px 35%;
-        border-radius: 10px;
-    }
-
-    .work_page .collect_connect_images:hover {
-        background-color: #fa9ac2;
-    }
-
-    .work_page .taskcheck_images {
-        height: 450px;
-        width: 250px;
-        border: 3px solid black;
-        padding: 10px;
-        margin: 15px 30%;
-        border-radius: 10px;
-    }
-
-    .work_page .taskcheck_images:hover {
-        background-color: #fa9ac2;
-    }
-
-    .work_page .brandmotion_image {
-        height: 350px;
-        width: 450px;
-        border: 3px solid black;
-        padding: 10px;
-        margin: 15px 150px;
-        border-radius: 10px;
-    }
-
-    .work_page .brandmotion_image:hover {
-        background-color: #fa9ac2;
-    }
-
-    .work_page .dog_rescue_image {
-        height: 300px;
-        width: 450px;
-        border: 3px solid black;
-        padding: 10px;
-        margin: 15px 150px;
-        border-radius: 10px;
-        text-align: center;
-    }
-
-    .work_page .dog_rescue_image:hover {
-        background-color: #fa9ac2;
-    }
-
-
-    .resume_page img {
-        width: 75px;
-        border: 3px solid black;
-        padding: 15px;
-        margin-right: 20px;
-        margin-bottom: 20px;
-        float: left;
-    }
-
-    .resume_page img:hover {
-        background-color: #fa9ac2;
-    }
-
-    .work_page footer {
-        background-color: #fa9ac2;
-        margin: 50px 0px 20px 0px;
-        height: 65px;
-        bottom: 25px;
-    }
-}
-
-
-@media all and (min-width: 1000px){
-
-    ul {
-        list-style-type: none;
-        margin: 25px;
-        padding: 5px;
-    }
-
-    ul .active{
-        color: white;
-        background-color: #765cc0;
-    }
-
-    li {
-        margin: 0px 10px 0px 5px;
-        font-size: 15px;
-    }
-
-    li a {
-        color: black;
-        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        float: left;
-        padding: 8px;
-        background-color: #E8E8E8;
-        border-right: 7px solid white;
-    }
-
-    li a:hover {
-        background-color: #b69ff7;
-        color: black;
-    }
-
-    .searchbar input[type=text] {
-        padding: 10px;
-        font-size: 17px;
-        border: 1px solid grey;
-        float: right;
-        width: 20%;
-        background: #f1f1f1;
-      }
-
-     .searchbar button {
-        float: right;
-        width: 5%;
-        padding: 10px;
-        background: #fa9ac2;
-        color: white;
-        font-size: 17px;
-        border: 1px solid grey;
-        border-left: none;
-        cursor: pointer;
-      }
-
-      .searchbar button:hover {
-        background: #fa9ac2;
-      }
-
-      .searchbar::after {
-        content: "";
-        clear: both;
-        display: table;
-      }
-
-    .home_page {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-    }
-
-    .home_page img {
-        width: 300px;
-        border: 3px solid black;
-        padding: 10px;
-        margin: 30px 50px 5% 50px;
-        border-radius: 10px;
-        float: left;
-        grid-column: 2;
     }
 
     .home_page img:hover {
@@ -634,7 +351,6 @@ aside {
         padding: 10px;
         margin: 15px 23%;
         border-radius: 10px;
-        flex-direction: column;
     }
 
     .work_page .cvc_images:hover {
@@ -707,6 +423,20 @@ aside {
         background-color: #fa9ac2;
     }
 
+    .home_page footer {
+        background-color: #fa9ac2;
+        margin: 100px 0px 20px 0px;
+        height: 65px;
+        bottom: 25px;
+    }
+
+    .about_page footer {
+        background-color: #fa9ac2;
+        margin: 175px 0px 20px 0px;
+        height: 65px;
+        bottom: 25px;
+    }
+
     .work_page footer {
         background-color: #fa9ac2;
         margin: 50px 0px 20px 0px;
@@ -715,8 +445,23 @@ aside {
     }
 }
 
+/* @media screen and (prefers-reduced-motion: reduce){
+    html {
+      scroll-behavior: auto; /* Removes scroll animation */
+    /* } */
+
+    /* .header {
+        animation: none;
+    } */
+
+    /* .skip {
+      -webkit-transition: none;
+      transition: none;
+    }
+  } */
+
   @media (prefers-reduced-motion) {
-    header {
+    header img {
         animation: none;
     }
   }

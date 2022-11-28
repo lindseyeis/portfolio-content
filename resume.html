@@ -8,6 +8,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Domine&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>Lindsey Eisenshtadt's Resume</title>
 	<!-- Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-6DP6H92VXV"></script>
@@ -29,6 +30,16 @@
 				<li><a href="about.html">About Me</a></li>
                 <li><a href="work.html">Work</a></li>
                 <li><a href="resume.html" class="active">Resume</a></li>
+				<form class="searchbar" action="action_page.php">
+					<button type="submit"><i class="fa fa-search"></i></button>
+					<input type="text" placeholder="Search.." name="search">
+				  </form>
+				  <script type="text/javascript">
+					document.getElementById('frmSearch').onsubmit = function() {
+						window.location = 'http://www.google.com/search?q=site:https://lindseyeis.github.io/portfolio-content/ ' + document.getElementById('txtSearch').value;
+						return false;
+					}
+				</script>
 			</ul>
 		</nav>
 	</header>
@@ -76,6 +87,7 @@
 				Please feel free to contact me at lindsee@umich.edu or fill out the form below and I will get back to you as soon as I can. Thank you!
 			</p>
 			<form
+			class="formspree"
 			action="https://formspree.io/f/mpznokdj"
 			method="POST"
 			>
