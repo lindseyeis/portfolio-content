@@ -30,16 +30,16 @@
 				<li><a href="about.html">About Me</a></li>
                 <li><a href="work.html" class="active">Work</a></li>
                 <li><a href="resume.html">Resume</a></li>
-                <form class="searchbar" action="action_page.php">
-					<button type="submit"><i class="fa fa-search"></i></button>
-					<input type="text" placeholder="Search.." name="search">
+                <form id="searchform" class="searchbar" method="get" action="source.html">
+					<button type="submit">Search</button>
+					<input id="search" type="text" placeholder="Search.." name="search" aria-labelledby="search">
 				  </form>
-                  <script type="text/javascript">
-					document.getElementById('frmSearch').onsubmit = function() {
-						window.location = 'http://www.google.com/search?q=site:https://lindseyeis.github.io/portfolio-content/ ' + document.getElementById('txtSearch').value;
+				<script type="text/javascript">
+					document.getElementById('searchform').onsubmit = function() {
+						window.location = 'http://www.google.com/https://lindseyeis.github.io/portfolio-content/' + document.getElementById('search').value;
 						return false;
 					}
-				</script>
+					</script>
 			</ul>
 		</nav>
 	</header>
@@ -51,8 +51,6 @@
             <a><img class="cvc_images" src="images/cvc1-work.png" alt="Sophisticated Landing Page of the new Carr Virtual Center">New Iteration</a>
             <a><img class="cvc_images" src="images/cvc2-work.png" alt="Whimsical Landing Page of the old Carr Virtual Center">Old Interation</a>
         </div>
-        <!-- <a><img class="cvc_images" src="images/cvc1-work.png" alt="Sophisticated Landing Page of the new Carr Virtual Center">New Iteration</a>
-        <a><img class="cvc_images" src="images/cvc2-work.png" alt="Whimsical Landing Page of the old Carr Virtual Center">Old Interation</a> -->
 		<p>
 			I had the opportunity to work with The Carr Center, a Detroit-based cultural arts center showcasing African and African American arts, to improve their online platform called the Carr Virtual Center (CVC). The CVC is a site that holds the works of The Carr Center, including artworks, performances, artist collections, and more. The original iteration of the CVC was created when the pandemic hit, as a way for people to access The Carr Center's content from the comfort of their own home, no matter where they are.
             I was one of three UX research and design interns working on the CVC for two months. I conducted background research, reviewed the needs of The Carr Center staff members, and designed prototypes. The new CVC that we created consists of virtual galleries to showcase the artworks as well as a lounge to encourage conversations between users about the artworks, a theater to highlight their performances, a library archive of artists, and an events page where users can stay up to date on upcoming events.
@@ -63,8 +61,6 @@
             <a><img class="collect_connect_images" src="images/collectconnect1-work.png" alt="Collect Connect Landing Page to start the game">Collect Connect Landing Page</a>
             <a><img class="collect_connect_images" src="images/collectconnect2-work.png" alt="Gameplay mode on Collect Connect">Collect Connect Gameplay</a>
         </div>
-        <!-- <a><img class="collect_connect_images" src="images/collectconnect1-work.png" alt="Collect Connect Landing Page to start the game">Collect Connect Landing Page</a>
-        <a><img class="collect_connect_images" src="images/collectconnect2-work.png" alt="Gameplay mode on Collect Connect">Collect Connect Gameplay</a> -->
 		<p>
             For my class, Needs Assessment and Usability Evaluation, my group had the opportunity to partner with The University of Michigan for their historical artifact game, Collect Connect. This game encourages conversations between users to make connections between different artifacts that can be found at the libraries and museums on campus.
             Our goal throughout the semester was to conduct multiple methods of research to evaluate Collect Connect and provide recommendations for improvement. 
@@ -77,8 +73,6 @@
             <a><img class="taskcheck_images" src="images/taskcheck1-work.png" alt="Welcome page for TaskCheck">TaskCheck Welcome Page</a>
             <a><img class="taskcheck_images" src="images/taskcheck2-work.png" alt="Example checklist with apps blocked">TaskCheck Checklist</a>
         </div>
-        <!-- <a><img class="taskcheck_images" src="images/taskcheck1-work.png" alt="Welcome page for TaskCheck">TaskCheck Welcome Page</a>
-        <a><img class="taskcheck_images" src="images/taskcheck2-work.png" alt="Example checklist with apps blocked">TaskCheck Checklist</a> -->
 		<p>
 			This was an independent, semester-long project for my Introduction to Interactive Design course. Our class was given the task to create a tool to solve a common problem.
             The problem I decided to focus on was that students decrease their productivity by getting distracted by their cell phones. My goal for this tool was to allow users to improve their study habits by focusing on getting their homework done to the best of their ability. The target audience for this project were students. I created an application called TaskCheck, which is a checklist tool combined with an app blocker.
