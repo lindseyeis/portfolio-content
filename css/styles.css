@@ -2,16 +2,23 @@ ul {
     list-style-type: none;
     margin: 25px;
     padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+    justify-content: center;
+    justify-items: center;
 }
 
 ul .active{
     color: white;
     background-color: #5F43AD;
+    text-decoration: white wavy underline;
 }
 
 li {
     margin: 0px 10px 0px 5px;
     font-size: 15px;
+    grid-column: 1 / 4
 }
 
 li a {
@@ -41,8 +48,8 @@ li a:hover {
 .searchbar button {
     float: right;
     padding: 10px;
-    background: #d02c71;
-    color: white;
+    background: #b69ff7;
+    color: black;
     font-size: 13px;
     border: 1px solid grey;
     border-left: none;
@@ -50,7 +57,7 @@ li a:hover {
   }
 
 .searchbar button:hover {
-    background: #d02c71;
+    background: #b69ff7;
   }
 
 .searchbar::after {
@@ -58,6 +65,12 @@ li a:hover {
     clear: both;
     display: table;
   }
+
+#searchoptions {
+    float: right;
+    background-color: white;
+    font-size: 12px;
+}
 
 .work_page {
     display: flex;
@@ -88,8 +101,8 @@ li a:hover {
 .header {
     padding: 40px;
     text-align: center;
-    background: #d02c71;
-    color: white;
+    background: #fa9ac2;
+    color: black;
     font-size: 3em;
     animation: fadeIn 2s;
     font-family: 'Domine', serif;
@@ -254,6 +267,7 @@ aside {
     margin: 30px 36px 30px 60px;
     border-radius: 10px;
     float: left;
+    display: none;
 }
 
 .about_page img:hover {
@@ -364,12 +378,13 @@ aside {
 
 
 
-@media all and (min-width: 800px){
+@media all and (min-width: 700px){
 
     ul {
         list-style-type: none;
         margin: 25px;
         padding: 5px;
+        display: block;
     }
 
     ul .active{
@@ -413,8 +428,8 @@ aside {
      .searchbar button {
         float: right;
         padding: 10px;
-        background: #d02c71;
-        color: white;
+        background: #b69ff7;
+        color: black;
         font-size: 17px;
         border: 1px solid grey;
         border-left: none;
@@ -422,7 +437,7 @@ aside {
       }
 
       .searchbar button:hover {
-        background: #d02c71;
+        background: #b69ff7;
       }
 
       .searchbar::after {
@@ -460,6 +475,7 @@ aside {
         margin: 30px 36px 30px 60px;
         border-radius: 10px;
         float: right;
+        display: block;
     }
 
     .about_page img:hover {
@@ -555,6 +571,7 @@ aside {
         list-style-type: none;
         margin: 25px;
         padding: 5px;
+        display: block;
     }
 
     ul .active{
@@ -593,8 +610,8 @@ aside {
      .searchbar button {
         float: right;
         padding: 10px;
-        background: #d02c71;
-        color: white;
+        background: #b69ff7;
+        color: black;
         font-size: 17px;
         border: 1px solid grey;
         border-left: none;
@@ -602,7 +619,7 @@ aside {
       }
 
       .searchbar button:hover {
-        background: #d02c71;
+        background: #b69ff7;
       }
 
       .searchbar::after {
