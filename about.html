@@ -30,23 +30,24 @@
 				<li><a href="about.html" class="active">About Me</a></li>
                 <li><a href="work.html">Work</a></li>
                 <li><a href="resume.html">Resume</a></li>
-				<form id="searchform" class="searchbar" method="get" action="source.html">
-					<button type="submit">Search</button>
-					<input id="search" type="text" placeholder="Search.." name="search" aria-labelledby="search">
-				  </form>
-				<script type="text/javascript">
-					document.getElementById('searchform').onsubmit = function() {
-						window.location = 'http://www.google.com/https://lindseyeis.github.io/portfolio-content/' + document.getElementById('search').value;
-						return false;
-					}
-					</script>
 			</ul>
+			<form id="searchform" class="searchbar" method="get" action="source.html">
+				<button type="submit">Search</button>
+				<input id="search" type="text" placeholder="Search.." name="search" aria-labelledby="search">
+			  </form>
+			<script type="text/javascript">
+				document.getElementById('searchform').onsubmit = function() {
+					window.location = 'http://www.google.com/https://lindseyeis.github.io/portfolio-content/' + document.getElementById('search').value;
+					return false;
+				}
+				</script>
 		</nav>
 	</header>
 
 	<main id="main">
 		<h1 class="header">A Bit About Me</h1>
         <img src="images/me_and_daisy-aboutme.JPG" alt="Lindsey Eisenshtadt and dog">
+		<img id="ellen" src="images/me-ellen-aboutme.JPG" alt="Lindsey Eisenshtadt and dog">
 		<p class="p1">
 			After graduating from Michigan State University with a degree in Marketing, I knew I wanted to do more.
             I enjoy learning so I was excited about the idea of going to graduate school.
